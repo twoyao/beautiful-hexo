@@ -1,0 +1,24 @@
+{
+  "name": "hexo-theme-beautiful-hexo",
+  "version": "1.0.0",
+  "description": "A hexo theme migarte from beautiful-jekyll",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twoyao/beautiful-hexo.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "beautiful-hexo"
+  ],
+  "author": "twoyao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twoyao/beautiful-hexo/issues"
+  },
+  "homepage": "https://github.com/pinggod/hexo-theme-apollo#readme"
+}

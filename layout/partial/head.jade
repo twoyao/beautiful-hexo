@@ -1,0 +1,29 @@
+meta(charset="utf-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+meta(name="author", content=config.author)
+
+title
+   block site_title
+       = config.title
+block description
+    meta(name="description", content=config.description)
+
+link(rel="alternate", type="application/rss+xml", title=config.title, href="/atom.xml")
+
+link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+link(rel="stylesheet", href="/css/bootstrap.min.css")
+link(rel="stylesheet", href="/css/main.css")
+
+if theme.googlefonts
+    each font in theme.googlefonts
+        link(rel="stylesheet", href="//fonts.googleapis.com/css?family="+font)
+
+//- TODO: support facebook
+//- Facebook OpenGraph tags
+//- meta(property="og:title" content=page.title ? page.title : config.title)
+//- meta(property="og:type", content="website")
+//- meta(property="og:url", content="/")
+//- meta(property="og:image", content="avatar")
+
+

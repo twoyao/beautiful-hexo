@@ -1,0 +1,15 @@
+extends partial/page
+
+block content
+    .posts-list
+        - page.posts.each(function (post) {
+            article.post-preview
+                a(href=url_for(post.path))
+                    h2.post-title!= post.title
+                    if post.subtitle
+                        h3.post-subtitle!= post.subtitle
+                p.post-meta Posted on #{full_date(post.date, "MMM D YYYY")}
+                .post-entry!= post.excerpt
+                    a(href=url_for(post.path), class="post-read-more")!= __('more')
+        - })
+

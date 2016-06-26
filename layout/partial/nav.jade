@@ -1,0 +1,18 @@
+nav.navbar.navbar-default.navbar-fixed-top.navbar-custom
+    .container-fluid
+        .navbar-header
+            button(class="navbar-toggle", type="button", data-toggle="collapse", data-target="#main-navbar")
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a(class="navbar-brand", href=url_for())= config.title
+        #main-navbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+                each value, key in theme["navbar-links"]
+                    li
+                        a(href=value)!= key
+        .avatar-container
+            .avatar-img-border
+                a(href=url_for())
+                    img(class="avatar-img", src=theme.avatar)

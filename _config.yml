@@ -1,0 +1,19 @@
+navbar-links:
+    Blog: /
+    Archive: /archives/
+    Weibo: http://weibo.com/bisyao
+    GitHub: https://github.com/twoyao
+    Rss: /atom.xml
+
+avatar:
+    avatar.jpg
+
+header:
+    title: twoyao
+    motto: 'tech musings'
+
+
+rss: /atom.xml
+googlefonts:
+  - "Lora:400,700,400italic,700italic"
+  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
