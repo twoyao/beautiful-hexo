@@ -1,15 +1,43 @@
-extends partial/page
+extends partial/base
+
+block header
+    header.header-section
+        .intro-header.no-img
+            .container
+                .row
+                    .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+                        .page-heading
+                            h1!= theme.header.title
+                            hr.small
+                            span.page-subheading!= theme.header.motto
 
 block content
-    .posts-list
-        - page.posts.each(function (post) {
-            article.post-preview
-                a(href=url_for(post.path))
-                    h2.post-title!= post.title
-                    if post.subtitle
-                        h3.post-subtitle!= post.subtitle
-                p.post-meta Posted on #{full_date(post.date, "MMM D YYYY")}
-                .post-entry!= post.excerpt
-                    a(href=url_for(post.path), class="post-read-more")!= __('more')
-        - })
+    div(class="container", role="main")
+        .row
+            .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+                .posts-list
+                    - page.posts.each(function (post) {
+                    article.post-preview
+                        a(href=url_for(post.path))
+                            h2.post-title!= post.title
+                            if post.subtitle
+                                h3.post-subtitle!= post.subtitle
+                        p.post-meta Posted on #{full_date(post.date, "MMM D YYYY")}
+                        .post-entry!= post.excerpt
+                        a(href=url_for(post.path), class="post-read-more")!= __('more')
+                    - })
+                ul.pager.main-pager
+                    if page.prev
+                        li.previous
+                            a(href=url_for(page.prev === 1 ? "/" : ("/" + config.pagination_dir + "/" + page.prev)))= __('prev')
+                    if page.next
+                        li.next
+                            a(href=url_for("/" + config.pagination_dir + "/" + page.next))= __('next')
+
+
+
+
+
+
+
 

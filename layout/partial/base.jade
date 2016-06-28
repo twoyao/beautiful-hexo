@@ -4,6 +4,10 @@ html(lang=config.language)
         include head
     body
         include nav
-        block main
-        //- include footer
+
+        block header
+        block content
+
+        include footer
+
         include footer-scripts

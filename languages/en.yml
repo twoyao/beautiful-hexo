@@ -1,5 +1,5 @@
-prev: PREV
-next: NEXT
-prev_post: PREV
-next_post: NEXT
-more: Read More
+prev: '← Newer Posts'
+next: 'Older Posts →'
+prev_post: '← Previous Post'
+next_post: 'Next Post →'
+more: '[Read More]'

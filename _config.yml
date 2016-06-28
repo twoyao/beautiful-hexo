@@ -1,19 +1,29 @@
 navbar-links:
     Blog: /
-    Archive: /archives/
-    Weibo: http://weibo.com/bisyao
-    GitHub: https://github.com/twoyao
-    Rss: /atom.xml
+    Projects: '/project.html'
+    'About Me / Contact': '/about.html'
 
-avatar:
-    avatar.jpg
+avatar: /biang.svg
+favicon: /favicon1.png
 
 header:
-    title: twoyao
-    motto: 'tech musings'
-
-
+    title: "Hi, I'm twoyao"
+    motto: '蒹葭蒼蒼 白露為霜</br>所謂伊人 在水一方'
 rss: /atom.xml
 googlefonts:
   - "Lora:400,700,400italic,700italic"
   - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+
+footer:
+  facebook:
+    link: #
+  weibo: 'http://weibo.com/bisyao?is_all=1'
+  github: 'https://github.com/twoyao'
+#  twitter: 'https://twitter.com/twoyao_'
+#  linkedin: 'https://www.linkedin.com/in/lianyao-bao-4907b6115'
+  rss: '/atom.xml'
+#  stackoverflow: 'http://stackoverflow.com/users/2504854/twoyao'
+
+google_analytics: UA-79995162-1
+
+

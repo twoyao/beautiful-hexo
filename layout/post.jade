@@ -1,0 +1,26 @@
+extends partial/base
+
+block header
+    header.header-section
+        .intro-header.no-img
+            .container
+                .row
+                    .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+                        .post-heading
+                            h1= page.title
+                            span.post-meta Posted on #{full_date(page.date, "MMM D YYYY")}
+
+block content
+    .container
+        .row
+            .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+                article(role="main", class="blog-post")
+                    != page.content
+                ul.pager.blog-pager
+                    if page.prev
+                        li.previous
+                            a(href=url_for(page.prev.path), data-toggle="tooltip", data-placement="top", title=page.prev.title)= __('prev_post')
+                    if page.next
+                        li.next
+                            a(href=url_for(page.next.path), data-toggle="tooltip", data-placement="top", title=page.next.title)= __('next_post')
+
