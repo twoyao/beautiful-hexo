@@ -3,12 +3,20 @@ navbar-links:
     Projects: '/project.html'
     'About Me / Contact': '/about.html'
 
-avatar: /biang.svg
-favicon: /favicon1.png
+avatar: /hexo.png
+favicon: /hexo.png
 
 header:
-    title: "Hi, I'm twoyao"
-    motto: '蒹葭蒼蒼 白露為霜</br>所謂伊人 在水一方'
+    title: "Beautiful Hexo"
+    motto: Build a beautiful and simple website in minutes
+    bigimgs:
+        - src: /bigimgs/01.jpg
+          desc: beautiful island
+        - src: /bigimgs/02.jpg
+          desc: Tropical Fish
+        - src: /bigimgs/03.jpg
+          desc: ocean
+
 rss: /atom.xml
 googlefonts:
   - "Lora:400,700,400italic,700italic"
@@ -16,13 +24,45 @@ googlefonts:
 
 footer:
   facebook:
-    link: #
-  weibo: 'http://weibo.com/bisyao?is_all=1'
-  github: 'https://github.com/twoyao'
-#  twitter: 'https://twitter.com/twoyao_'
-#  linkedin: 'https://www.linkedin.com/in/lianyao-bao-4907b6115'
-  rss: '/atom.xml'
-#  stackoverflow: 'http://stackoverflow.com/users/2504854/twoyao'
+    link: # your link e.g. https://...
+    title: Facebook
+    icon: fa-facebook
+    enalbe: false
+  weibo:
+    link: 'http://weibo.com/bisyao?is_all=1'
+    title: Weibo
+    icon: fa-weibo
+    enalbe: true
+  github:
+    link: 'https://github.com/twoyao'
+    title: GitHub
+    icon: fa-github
+    enable: true
+  rss:
+    link: '/atom.xml'
+    title: RSS
+    icon: fa-rss
+    enable: true
+  twitter:
+    link: 'https://twitter.com/twoyao_'
+    title: Twitter
+    icon: fa-twitter
+    enable: true
+  mail:
+    link: 'mailto:bisyao@gmail.com'
+    title: Email me
+    icon: fa-envelope
+    enable: true
+  linkin:
+    link: # your link here e.g. http...
+    title: LinkedIn
+    icon: fa-linkedin
+    enable: false
+  stackoverflow:
+    link: # your link here e.g. http...
+    title: StackOverflow
+    icon: fa-stack-overflow
+    enable: false
 
 google_analytics: UA-79995162-1
 

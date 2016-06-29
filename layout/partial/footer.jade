@@ -1,24 +1,15 @@
-mixin link(href, title, icon)
-    if href
-        li
-            a(href=href, title=title)
-                span.fa-stack.fa-lg
-                    i.fa.fa-circle.fa-stack-2x
-                    i.fa.fa-stack-1x.fa-inverse(class=icon)
-
 footer
     .container.beautiful-jekyll-footer
         .row
             .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
                 ul.list-inline.text-center.footer-links
-                    +link(theme.footer.facebook, "Facebook", "fa-facebook")
-                    +link(theme.footer.weibo, "Weibo", "fa-weibo")
-                    +link(theme.footer.github, "GitHub", "fa-github")
-                    +link(theme.footer.twitter, "Twitter", "fa-twitter")
-                    +link(config.email ? "mailto:" + config.email : null, "Email me", "fa-envelope")
-                    +link(theme.footer.linkedi, "LinkedIn", "fa-linkedin")
-                    +link(theme.footer.stackoverflow, "StackOverflow", "fa-stack-overflow")
-                    +link(theme.footer.rss, "RSS", 'fa-rss')
+                    each item in theme.footer
+                        if item.enable
+                            li
+                                a(href=item.link, title=item.title)
+                                    span.fa-stack.fa-lg
+                                        i.fa.fa-circle.fa-stack-2x
+                                        i.fa.fa-stack-1x.fa-inverse(class=item.icon)
                 - var year = new Date().getFullYear();
                 p.copyright.text-muted.
                     © #{config.author} • #{year} • #[a(href="mailto:" + config.email)= config.email]

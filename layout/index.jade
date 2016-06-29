@@ -1,15 +1,7 @@
 extends partial/base
 
 block header
-    header.header-section
-        .intro-header.no-img
-            .container
-                .row
-                    .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-                        .page-heading
-                            h1!= theme.header.title
-                            hr.small
-                            span.page-subheading!= theme.header.motto
+    include partial/index-header
 
 block content
     div(class="container", role="main")
@@ -22,7 +14,8 @@ block content
                             h2.post-title!= post.title
                             if post.subtitle
                                 h3.post-subtitle!= post.subtitle
-                        p.post-meta Posted on #{full_date(post.date, "MMM D YYYY")}
+                        include partial/post-meta
+                        +post_meta(post.date, post.tags)
                         .post-entry!= post.excerpt
                         a(href=url_for(post.path), class="post-read-more")!= __('more')
                     - })
