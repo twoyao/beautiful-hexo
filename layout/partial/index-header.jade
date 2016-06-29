@@ -1,0 +1,18 @@
+- var display_images = theme.header.bigimgs && theme.header.bigimgs.length > 0
+
+if display_images
+
+  - var attrs = {'data-num-img': theme.header.bigimgs.length}
+  - theme.header.bigimgs.forEach(function(val, idx) { var c = idx+1; attrs["data-img-src-"+c]=val.src; attrs["data-img-desc-"+c]=val.desc;})
+  #header-big-imgs&attributes(attrs)
+
+header.header-section(class={ 'has-img' : display_images })
+  .intro-header(class=display_images? 'big-img' : 'no-img')
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+            .page-heading
+              h1!= theme.header.title
+              hr.small
+              span.page-subheading!= theme.header.motto
+    span.img-desc
