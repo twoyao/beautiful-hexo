@@ -1,6 +1,6 @@
 navbar-links:
-    Blog: /
-    Projects: '/project.html'
+    Archive: /archives
+    Projects: /project.html
     'About Me / Contact': '/about.html'
 
 avatar: /hexo.png

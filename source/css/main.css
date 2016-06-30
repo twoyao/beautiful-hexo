@@ -552,3 +552,17 @@ table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
 }
+
+.archive-list li {
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+
+.archive-list li span {
+  color: #808080;
+  margin-right: 25px;
+  font-style: italic;
+}
+
