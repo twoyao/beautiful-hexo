@@ -566,3 +566,9 @@ table tr td :last-child {
   font-style: italic;
 }
 
+.tag:focus, .tag:hover {
+  text-decoration: none;
+  color: #0085a1
+}
+
+

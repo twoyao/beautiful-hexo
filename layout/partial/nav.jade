@@ -11,8 +11,8 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-custom
             ul.nav.navbar-nav.navbar-right
                 each value, key in theme["navbar-links"]
                     li
-                        a(href=value)!= key
+                        a(href=url_for(value))!= key
         .avatar-container
             .avatar-img-border
                 a(href=url_for())
-                    img(class="avatar-img", src=theme.avatar)
+                    img(class="avatar-img", src=url_for(theme.avatar))

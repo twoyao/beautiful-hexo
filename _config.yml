@@ -1,7 +1,6 @@
 navbar-links:
     Archive: /archives
-    Projects: /project.html
-    'About Me / Contact': '/about.html'
+    About: /about.html
 
 avatar: /hexo.png
 favicon: /hexo.png
@@ -64,6 +63,9 @@ footer:
     icon: fa-stack-overflow
     enable: false
 
-google_analytics: UA-79995162-1
+google_analytics:
 
+comment:
+  enable: true
+  disqus: twoyao
 

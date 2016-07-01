@@ -1,0 +1,19 @@
+extends partial/base
+
+block header
+    header.header-section
+        .intro-header.no-img
+            .page-heading
+                h1!= page.title
+                if page.subtitle
+                    hr.small
+                    span.page-subheading!= page.subtitle
+
+block content
+    .container
+        .row
+            .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+                article(role="main", class="blog-post")
+                    != page.content
+
+                include partial/comment

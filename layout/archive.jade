@@ -7,10 +7,10 @@ block header
 block content
     .container
         .row
-          .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1
-              ul.archive-list
-                - var prev_year = 0;
-                - page.posts.each(function(post) {
+            .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1
+                ul.archive-list
+                    - var prev_year = 0;
+                    - page.posts.each(function(post) {
                     - var current_year = full_date(post.date, 'YYYY')-0;
                     if current_year !== prev_year
                         h2= current_year
@@ -18,4 +18,7 @@ block content
                     li.col-lg-offset-1.col-md-offset-1
                         span.post-meta= full_date(post.date, 'MMM D')
                         a.post-title(href=url_for(post.path))= post.title
-                - })
+                    - })
+
+
+

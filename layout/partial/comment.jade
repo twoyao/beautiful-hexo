@@ -1,0 +1,19 @@
+if theme.comment.enable && !page.comment_disable
+    .disqus-comments
+      .comments
+          #disqus_thread
+
+    script.
+        var url_parts = window.location.href.split("?");
+        var disqus_url = url_parts[0];
+        (function () {
+            console.log("enter disqus");
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = "//#{theme.comment.disqus}.disqus.com/embed.js";
+            (document.head || d.body ).appendChild(dsq);
+        })();
+
+
+

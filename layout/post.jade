@@ -1,5 +1,7 @@
 extends partial/base
 
+include partial/post-meta
+
 block header
     header.header-section
         .intro-header.no-img
@@ -8,7 +10,9 @@ block header
                     .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
                         .post-heading
                             h1= page.title
-                            span.post-meta Posted on #{full_date(page.date, "MMM D YYYY")}
+                            if page.subtitle
+                                h2.post-subheading= page.subtitle
+                            +post_meta(page.date, page.tags)
 
 block content
     .container
@@ -24,3 +28,4 @@ block content
                         li.next
                             a(href=url_for(page.next.path), data-toggle="tooltip", data-placement="top", title=page.next.title)= __('next_post')
 
+                include partial/comment
