@@ -11,12 +11,11 @@ title
 block description
     meta(name="description", content=config.description)
 
-link(rel="alternate", type="application/rss+xml", title=config.title, href="/atom.xml")
+link(rel="alternate", type="application/rss+xml", title=config.title, href=url_for("/atom.xml"))
 
 link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
-link(rel="stylesheet", href="/css/bootstrap.min.css")
-link(rel="stylesheet", href="/css/main.css")
-
+link(rel="stylesheet", href=url_for("/css/bootstrap.min.css"))
+link(rel="stylesheet", href=url_for("/css/main.css"))
 
 if theme.googlefonts
     each font in theme.googlefonts

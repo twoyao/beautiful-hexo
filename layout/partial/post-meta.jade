@@ -2,7 +2,7 @@ mixin post_meta(date, tags)
     p.post-meta Posted on #{full_date(date, "MMM D YYYY")}
         - tags.each(function(tag) {
             = ' · '
-            a.post-meta(href=tag.path)= tag.name
+            a.tag.post-meta(href=url_for(tag.path))= tag.name
         - })
 
 
