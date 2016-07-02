@@ -1,7 +1,7 @@
 
 Beautiful-hexo is a simple elegant hexo theme ported from [Beautiful-jekyll](http://deanattali.com/beautiful-jekyll) which written by [Dean Attali](http://deanattali.com/aboutme). Nice work!
 
-![hexo-preview](/images/hexo-preview.png)
+![hexo-preview](images/hexo-preview.png)
 
 ### Install
 
