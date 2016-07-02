@@ -1,5 +1,6 @@
 navbar-links:
     Archive: /archives
+    Github: https://github.com/twoyao/beautiful-hexo
     About: /about.html
 
 avatar: /hexo.png
