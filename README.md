@@ -1,3 +1,4 @@
+# [Beautiful-hexo](http://twoyao.cn/beautiful-hexo/)[![hexo](https://img.shields.io/badge/Hexo-v3.1%2B-blue.svg)](https://hexo.io/)
 
 Beautiful-hexo is a simple elegant hexo theme ported from [Beautiful-jekyll](http://deanattali.com/beautiful-jekyll) which written by [Dean Attali](http://deanattali.com/aboutme). Nice work!
 
