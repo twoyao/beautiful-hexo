@@ -6,3 +6,6 @@ node_modules/
 public/
 .deploy/
 themes/
+.deploy_git/
+.idea/
+_config.yml~
