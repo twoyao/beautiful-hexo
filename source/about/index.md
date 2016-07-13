@@ -1,9 +1,7 @@
----
-layout: default
-title: About
+title: about
+date: 2016-07-13 22:28:32
 subtitle: "simple responsive and beautiful"
 ---
-
 Beautiful-hexo is a simple elegant hexo theme ported from [Beautiful-jekyll](http://deanattali.com/beautiful-jekyll) which written by [Dean Attali](http://deanattali.com/aboutme). Nice work!
 
 ![hexo-preview](/beautiful-hexo/assets/image/hexo-preview.png)

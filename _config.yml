@@ -96,7 +96,7 @@ archive_generator:
 deploy:
   type: git
   repository: git@github.com:twoyao/twoyao.github.io.git
-  branch: master
+  branch: gh-pages
 
 mathjax: true
 
