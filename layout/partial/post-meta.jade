@@ -1,5 +1,6 @@
 mixin post_meta(date, tags)
     p.post-meta Posted on #{full_date(date, "MMM D YYYY")}
+      if tags
         - tags.each(function(tag) {
             = ' · '
             a.tag.post-meta(href=url_for(tag.path))= tag.name
