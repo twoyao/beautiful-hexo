@@ -445,7 +445,7 @@ footer .theme-by {
 .header-section.has-img .intro-header.no-img {
   display: none;
 }
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 325px) {
   .header-section.has-img .intro-header.no-img {
     display: block;
   }
@@ -460,7 +460,7 @@ footer .theme-by {
   .header-section.has-img .big-img {
     margin-bottom: 0;
   }  
-} 
+}
 @media only screen and (max-width: 325px) { 
   .intro-header.big-img {
     height: 200px;
