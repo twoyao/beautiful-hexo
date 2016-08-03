@@ -2,6 +2,7 @@ extends partial/base
 
 include partial/post-meta
 
+
 block header
     header.header-section
         .intro-header.no-img
@@ -29,3 +30,6 @@ block content
                             a(href=url_for(page.next.path), data-toggle="tooltip", data-placement="top", title=page.next.title)= __('next_post')
 
                 include partial/comment
+
+
+

@@ -2,4 +2,8 @@ script(src=url_for("/js/jquery-1.11.2.min.js"))
 script(src=url_for("/js/bootstrap.min.js"))
 script(src=url_for("/js/main.js"))
 
+if theme.highlight.enable
+    script(src=url_for("/js/highlight.min.js"))
+    script hljs.initHighlightingOnLoad();
+
 include google_analytics

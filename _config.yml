@@ -22,6 +22,12 @@ googlefonts:
   - "Lora:400,700,400italic,700italic"
   - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
 
+highlight:
+  enable: true
+# or use any highlight.js style
+#  style_path: "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css"
+  style_path: "/css/highlight.css"
+
 footer:
   facebook:
     link: # your link e.g. https://...
