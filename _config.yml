@@ -36,7 +36,7 @@ relative_link: false
 highlight:
   enable: false
   line_number: false
-  tab_replace:
+  tab_replace: true
 
 # Category & Tag
 default_category: uncategorized

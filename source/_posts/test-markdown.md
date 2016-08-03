@@ -34,7 +34,7 @@ x <- 5 + 10
 print(x)
 ~~~
 
-And here is some code with syntax highlighting( _currently not supported_ )
+And here is some code with syntax highlighting
 
 ```javascript
 var foo = function(x) {
