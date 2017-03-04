@@ -571,4 +571,17 @@ table tr td :last-child {
   color: #0085a1
 }
 
+figure.highlight>table,
+figure.highlight>table .code {
+    width: 100%;
+    border: none;
+    padding: 0;
+}
 
+figure.highlight>table tr {
+    border-top: none;
+}
+
+figure.highlight>table .gutter {
+    display:none;
+}
