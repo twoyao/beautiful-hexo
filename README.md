@@ -30,7 +30,7 @@ archive_generator:
 
 #### netease-gentie
 
-Setup `comment.netease.productKey` in theme's `_config.yml`. For test, you have to ensure you website hostname match settings of netease-gentie. 
+Setup `comment.netease.productKey` in theme's `_config.yml`. For test, you have to ensure your website hostname match settings of netease-gentie. 
 To do so, add flollowing lines in /etc/hosts:
 
 ```
