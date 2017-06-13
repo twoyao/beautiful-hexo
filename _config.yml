@@ -74,5 +74,6 @@ google_analytics:
 
 comment:
   enable: true
-  disqus: twoyao
-
+#  disqus: twoyao
+  netease:
+    productKey: 64d7f0abf9224be3bfdcc6cfb9b83fcf

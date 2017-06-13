@@ -26,5 +26,18 @@ archive_generator:
     daily: false
 ```
 
+### Comment
+
+#### netease-gentie
+
+Setup `comment.netease.productKey` in theme's `_config.yml`. For test, you have to ensure you website hostname match settings of netease-gentie. 
+To do so, add flollowing lines in /etc/hosts:
+
+```
+127.0.0.1 notes.example.com
+```
+
+And run hexo at 80 port: `sudo hexo s --debug -p 80`. After test, you may revert hosts file.
+
 Theme config file is brief and clear. 
 If you have any question, check [hexo online document](https://hexo.io/).
