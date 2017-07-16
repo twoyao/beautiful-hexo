@@ -73,7 +73,17 @@ footer:
 google_analytics:
 
 comment:
-  enable: true
-#  disqus: twoyao
-  netease:
-    productKey: 64d7f0abf9224be3bfdcc6cfb9b83fcf
+  # false, disqus, netease or facebook
+  enable: netease
+  # disqus user, netease productKey or facebook appid 
+  id: 64d7f0abf9224be3bfdcc6cfb9b83fcf
+  # [facebook only] plugin language 
+  lang: en_US
+  # [facebook only] number of posts per load
+  numposts: 10
+
+# IMPORTANT NOTE [Facebook Plugin]:
+# If you are using Facebook Social Plugin and it's not working, 
+# please go to this URL https://developers.facebook.com/tools/debug/og/object/
+# copy the link of your post there and press the button "Fetch new scrape information".
+# In that way, you are going to update your post metatags Facebook Open Graph information. 
