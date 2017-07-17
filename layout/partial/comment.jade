@@ -1,5 +1,7 @@
 if theme.comment.enable && !page.comment_disable
-    if theme.comment.netease
+    if theme.comment.enable == "netease"
         include netease.jade
-    else if theme.disqus
+    else if theme.comment.enable == "disqus"
         include disqus.jade
+    else if theme.comment.enable == "facebook"
+        include facebook-comments.jade

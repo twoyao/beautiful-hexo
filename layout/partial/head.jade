@@ -24,11 +24,18 @@ if theme.googlefonts
     each font in theme.googlefonts
         link(rel="stylesheet", href="//fonts.googleapis.com/css?family="+font)
 
-//- TODO: support facebook
 //- Facebook OpenGraph tags
-//- meta(property="og:title" content=page.title ? page.title : config.title)
-//- meta(property="og:type", content="website")
-//- meta(property="og:url", content="/")
-//- meta(property="og:image", content="avatar")
-
-
+//- FIXME: This works only if you are using Facebook comments 
+if theme.comment.enable == "facebook"
+    meta(property="og:type", content="website")
+    //- 966242223397117 is the default fb app_id if you does not have an app at Facebook Developers
+    meta(property="fb:app_id", content=theme.comment.id ? theme.comment.id :  "966242223397117")
+    //- You can use either config.title or theme.header.title (It's up to you)
+    meta(property="og:title" content=page.title ? (page.title + " - " + config.title) : config.title)
+    //- The two meta properties below works for sharing the post on Facebook
+    //- Remember to set the image that you want at your post header (fb_og_image)!
+    //- Or you can use your avatar image (or any other image).
+    meta(property="og:image", content=page.fb_og_image ? page.fb_og_image : href=url_for(theme.avatar))
+    //- Remember to set the description that you want at your post header (fb_og_description)!
+    //- Or you can use either config.description or theme.header.motto (It's up to you)
+    meta(property="og:description", content=page.fb_og_description ? page.fb_og_description : config.description)

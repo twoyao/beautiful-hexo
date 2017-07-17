@@ -1,0 +1,18 @@
+//- FIXME: rename disqus-comments component to a generic name
+.disqus-comments
+  .comments
+      #fb-root
+
+script.
+    var fbc_url_parts = window.location.href.split("?");
+    var fbc_url = fbc_url_parts[0];
+    (function () {
+        var fbc = document.createElement('script');	
+        fbc.type = 'text/javascript';
+        fbc.async = true;
+        fbc.src = "//connect.facebook.net/#{theme.comment.lang}/sdk.js#xfbml=1&version=v2.9";
+        (document.head || d.body ).appendChild(fbc);
+        //- FIXME: Sharing button should be an option
+        document.write('<div class="fb-share-button" data-href="' + document.location.href + '" data-layout="button" data-size="large">Share</div>');
+        document.write('<div class="fb-comments" data-href="' + document.location.href + '" data-width="100%" data-numposts="#{theme.comment.numposts}"></div>');
+    })();
