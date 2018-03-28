@@ -1,0 +1,29 @@
+extends partial/base
+
+block header
+    header.header-section
+        .intro-header.no-img
+
+block content
+    .container
+        .row
+            .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1
+
+                ul.list-inline.text-center
+                    - site.tags.map(function(tag) {
+                        if tag.posts.length > 0
+                            li
+                                a.badge(href="#"+tag.name, rel=tag.length, style="font-size: 16px; padding: 8px; margin: 5px 5px 5px 5px;")= tag.name
+                    - })
+
+                - site.tags.map(function(tag) {  
+                    if tag.posts.length > 0
+                        ul.archive-list
+                            span.fa.fa-tag.listing-seperator(id=tag.name, style="font-size: 1.17em;")
+                            span(style="font-size: 1.5em; font-weight: bold; margin-left: 5px;")= tag.name
+                            - tag.posts.map(function(post) {
+                                li.col-lg-offset-1.col-md-offset-1
+                                    span.post-meta= full_date(post.date, 'MMM D')
+                                    a.post-title(href=url_for(post.path))= post.title
+                            - })
+                - }) 
