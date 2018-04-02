@@ -39,5 +39,26 @@ To do so, add flollowing lines in /etc/hosts:
 
 And run hexo at 80 port: `sudo hexo s --debug -p 80`. After test, you may revert hosts file.
 
+### Tags page
+
+For displaying a page with all blog tags, create a folder named `tags` at `source` folder with the following `index.md` inside:
+
+
+```
+---
+title: "Tags"
+layout: "tags"
+---
+```
+
+Don't forget to update your `navbar-links` at `beautiful-hexo` `_config.yml` file:
+
+```
+navbar-links:
+    ...
+    Tags: /tags
+```
+
 Theme config file is brief and clear. 
 If you have any question, check [hexo online document](https://hexo.io/).
+
