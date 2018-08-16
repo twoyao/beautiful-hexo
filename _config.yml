@@ -33,12 +33,12 @@ footer:
     link: # your link e.g. https://...
     title: Facebook
     icon: fa-facebook
-    enalbe: false
+    enable: false
   weibo:
     link: 'http://weibo.com/bisyao?is_all=1'
     title: Weibo
     icon: fa-weibo
-    enalbe: true
+    enable: true
   github:
     link: 'https://github.com/twoyao'
     title: GitHub
